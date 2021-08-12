@@ -1,0 +1,17 @@
+<html>
+
+<body >
+   <h1>UPDATE INDEX {{ .id}}</h1>
+    <form method="POST" action="/books/update/{{ .id}}">
+       
+        <input type=text name="Bookr" value="{{ .title}}">
+        <input type=text name="Authorr" value="{{ .Author}}">
+        <input type=submit value="UPDATE">
+</form>
+
+
+
+
+
+</body>
+</html>

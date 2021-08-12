@@ -1,0 +1,22 @@
+<html>
+<body >
+    <h1>BOOK STORE</h1>
+    <form method="POST" action="/books">
+        <input type=text name="Bookr" placeholder="Book_Name" value="">
+        <input type=text name="Authorr" placeholder="Author_Name" value="">
+        <input type=submit value="ADD">
+</form>
+{{ range .data}}
+
+<h3>Tite : {{ .Title}}</h3>
+
+<h3>Author : {{ .Author}}</h3>
+<button><a href = "/books/del/{{ .ID}}">Delete</a></button>
+<button><a href = "/books/update/{{ .ID}}">Update</a></button>
+
+
+
+
+{{end}}
+</body>
+</html>
